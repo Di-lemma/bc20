@@ -192,7 +192,7 @@ security find-certificate -a -p | openssl x509 -noout -subject 2>/dev/null | gre
 
 ## Conclusion
 
-bc20 is a professionally engineered botnet agent that used adware as a revenue stream and cover story while maintaining a general-purpose remote shell with full user-space access. The RabbitMQ architecture demonstrates above-average operational sophistication. The campaign appears to have been abandoned — the C2 domain lapsed and the agent has been silently failing to connect for an indeterminate period, likely years. 
+bc20 appears to be a RAT-class backdoor or botnet agent that combined adware-style monetization with arbitrary shell command execution in user space. The recovered artifacts show durable persistence, a resilient watchdog/update structure, and AMQPS-based C2 using RabbitMQ on port 443. While some higher-level campaign behavior remains inferential, the execution primitive and persistence model are sufficient to treat the infection as a serious compromise rather than mere nuisance adware. 
 
 The most operationally significant finding is that **the infection had been present since approximately 2020–2021 and went undetected for 4–5 years**, surviving multiple macOS updates and routine system use. This is not a criticism of the user — XProtect is signature-based, the agent used outbound-only connections on port 443, and the Pirrit family of adware is specifically engineered to avoid behavioral detection heuristics.
 
