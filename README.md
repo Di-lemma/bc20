@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-What first seemed to be a standard Pirrit adware infection on a 2017 MacBook Air was, on closer examination, a fully featured Remote Access Trojan (RAT). This RAT enabled arbitrary shell execution, used a robust multi-process watchdog architecture, and operated through a professionally designed command-and-control (C2) infrastructure based on AMQP/RabbitMQ. The payload, identified as `bc20`, primarily monetized through ad injection while providing the operator with continuous remote shell access.
+This RAT enables arbitrary shell execution, used a robust multi-process watchdog architecture, and operated through a professionally designed command-and-control (C2) infrastructure based on AMQP/RabbitMQ. The payload, identified as `bc20`, primarily monetized through ad injection while providing the operator with continuous remote shell access.
 
 The C2 domain (`ogorax.xyz`) was inactive at the time of discovery, indicating the campaign may have been dormant for an extended period, possibly years.
 
