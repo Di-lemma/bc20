@@ -47,7 +47,7 @@ Found in `~/Library/bc20/` (campaign directory):
 
 ### C2 Transport: Why RabbitMQ?
 
-The choice of RabbitMQ as the C2 bus is sophisticated and deliberate. Most unsophisticated malware uses direct TCP callbacks or HTTP polling to a C2 server, which is trivially detectable. RabbitMQ inverts the connection model:
+Most unsophisticated malware uses direct TCP callbacks or HTTP polling to a C2 server, which is easily detectable. RabbitMQ flips the connection model:
 
 ```
 [ogorax.xyz RabbitMQ broker]
