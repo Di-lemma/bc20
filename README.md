@@ -1,6 +1,5 @@
 # bc20
 ### A RabbitMQ-backed RAT Masquerading as Adware
-*Discovered: March 2026 | Host: macOS 10.x, MacBook Air 2017*
 
 ---
 
